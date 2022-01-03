@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool company</title>
+
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/dist.min.css">
+    <link rel="stylesheet" href="./css/garland.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+        rel="stylesheet"
+    >
+    <link 
+        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+        rel="stylesheet" 
+    >
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        rel="stylesheet"
+    >
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <!-- Garland -->
+    <ul id="garland" class="garland">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- Header -->
+    <section class="header">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <div class="header_logo-wrapper">
+                    <img 
+                        class="header_logo"
+                        src="img/logo.png"
+                        alt="Логотип сайта"
+                    >
+                </div>
+                
+                <div class="header_content-wrapper">
+                    <div class="header_content">
+
+                        <div class="base-title c-white ta-left">
+                            С помощью нас <br>
+                            вы сможете создать то, о чем <br>
+                        </div>
+                        <div class="base-title big-title c-white ta-left">
+                            желаете!
+                        </div>
+                        <div class="base-text c-white ta-left">
+                            Наши возможности + опыт позволят Вам достичь <br>
+                            огромного успеха. Мы верим в ваc! И знаем это на <br>
+                            все 100%. Вас не остановить!
+                        </div>
+
+                        <div class="base-button">
+                            Узнать больше...
+                        </div>
+                    </div>
+
+                    <div class="header_image-wrapper">
+                        <img 
+                            class="header_image"
+                            src="img/header-img.png"
+                            alt="Картинка телефона">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="needs">
+        <div class="container">
+
+            <div class="base-title ta-center title-indent">
+                Что вам необходимо?
+            </div>
+
+            <div class="needs_items">
+                <div class="needs_item">
+                    <img
+                        class="item_image" 
+                        src="img/f3.png"
+                        alt="Школьные принадлежности"
+                    >
+                    <div class="base-title small-title ta-center small-title-indent">
+                        Первый блок
+                    </div>
+                    <div class="base-text ta-center c-gray">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                </div>
+
+                <div class="needs_item">
+                    <img
+                        class="item_image" 
+                        src="img/f4.png"
+                        alt="Воздушный шар"
+                    >
+                    <div class="base-title small-title ta-center small-title-indent">
+                        Второй блок
+                    </div>
+                    <div class="base-text ta-center c-gray">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                </div>
+
+                <div class="needs_item">
+                    <img
+                        class="item_image" 
+                        src="img/f5.png"
+                        alt="Синий флаг"
+                    >
+                    <div class="base-title small-title ta-center small-title-indent">
+                        Третий блок
+                    </div>
+                    <div class="base-text ta-center c-gray">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Custom form -->
+    <section class="custom-form">
+        <div class="container">
+
+            <div class="base-title ta-center title-indent">
+                Форма заказа комплектующих
+            </div>
+
+            <form id="custom-form" class="form_content" autocomplete="off">
+
+                <label>
+                    <span class="input-name">
+                        Имя
+                    </span>
+                    <input
+                        id="name"
+                        type="text"
+                        class="form_input"
+                        name="name"
+                        placeholder="Иван Васильевич"
+                        onblur="checkName()"
+                    >
+                    <span
+                        id="name-err"
+                        class="err"
+                    ></span>
+                </label>
+
+                <label>
+                    <span class="input-name">
+                        Номер телефона
+                    </span>
+                    <input
+                        id="tel"
+                        type="tel"
+                        class="form_input"
+                        name="tel"
+                        placeholder="+7 (999) 999-99-99"
+                        onblur="checkPhone()"
+                    >
+                    <span
+                        id="tel-err"
+                        class="err"
+                    >
+                    </span>
+                </label>
+
+                <label>
+                    <span class="input-name">
+                        Почтовый адрес
+                    </span>
+                    <input
+                        type="email"
+                        class="form_input"
+                        name="email"
+                        id="email"
+                        placeholder="your_name@server.zone"
+                        onblur="checkEmail()"
+                    >
+                    <span
+                        id="email-err"
+                        class="err"
+                    ></span>
+                </label>
+
+                <label>
+                    <span class="input-name">
+                        Комплектующие
+                    </span>
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox_input"
+                            id="pc-part-case"
+                            name="pc-part-case"
+                            value="Корпус"
+                        >
+                        <label
+                            class="checkbox-name" 
+                            for="pc-part-case"
+                        >
+                            Корпус
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox_input"
+                            id="pc-part-motherboard"
+                            name="pc-part-motherboard"
+                            value="Материнская плата"
+                        >
+                        <label
+                            class="checkbox-name" 
+                            for="pc-part-motherboard"
+                        >
+                            Материнская плата
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox_input"
+                            id="pc-part-cpu"
+                            name="pc-part-cpu"
+                            value="Процессор"
+                        >
+                        <label
+                            class="checkbox-name" 
+                            for="pc-part-cpu"
+                        >
+                            Процессор
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox_input"
+                            id="pc-part-gpu"
+                            name="pc-part-gpu"
+                            value="Видеокарта"
+                        >
+                        <label
+                            class="checkbox-name" 
+                            for="pc-part-gpu"
+                        >
+                            Видеокарта
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox_input"
+                            id="pc-part-ram"
+                            name="pc-part-ram"
+                            value="Оперативная память"
+                        >
+                        <label
+                            class="checkbox-name" 
+                            for="pc-part-ram"
+                        >
+                            Оперативная память
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox_input"
+                            id="pc-part-hdd"
+                            name="pc-part-hdd"
+                            value="Жесткий диск"
+                        >
+                        <label
+                            class="checkbox-name" 
+                            for="pc-part-hdd"
+                        >
+                            Жесткий диск
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input
+                            type="checkbox"
+                            class="checkbox_input"
+                            id="pc-part-power-unit"
+                            name="pc-part-power-unit"
+                            value="Блок питания"
+                        >
+                        <label
+                            class="checkbox-name" 
+                            for="pc-part-power-unit"
+                        >
+                            Блок питания
+                        </label>
+                    </div>
+
+                    <span
+                        id="pc-part-err"
+                        class="err"
+                    >
+                    </span>
+                </label>
+
+                <label>
+                    <span class="input-name">
+                        Город
+                    </span>
+                    <input
+                        type="text"
+                        class="form_input"
+                        name="city"
+                        id="city"
+                        placeholder="Москва"
+                        onblur="checkCity()"
+                    >
+                    <span
+                        id="city-err"
+                        class="err"
+                    ></span>
+                </label>
+
+                <label>
+                    <span class="input-name">
+                        Улица, дом, квартира
+                    </span>
+                    <input
+                        type="text"
+                        class="form_input"
+                        name="address"
+                        id="address"
+                        placeholder="Ленина, 1, 100"
+                        onblur="checkAddress()"
+                    >
+                    <span
+                        id="address-err"
+                        class="err"
+                    >
+                    </span>
+                </label>
+
+                <button
+                    type="button"
+                    class="base-button"
+                    onclick="makeOrder()"
+                >
+                    Заказать
+                </button>
+            </form>
+
+            <div id="form_summary" class="form_summary">
+
+                <div class="base-title small-title small-title-indent ta-center">
+                    Заказ принят!<br>
+                    Полученные данные:
+                </div>
+
+                <div class="summary_section">
+                    <div class="secion_name">Имя</div>
+                    <div id="sum_name" class="section_info ta-center"></div>
+                </div>
+                
+                <div class="summary_section">
+                    <div class="secion_name">Номер телефона</div>
+                    <div id="sum_tel" class="section_info ta-center"></div>
+                </div>
+
+                <div class="summary_section">
+                    <div class="secion_name">Почтовый адрес</div>
+                    <div id="sum_email" class="section_info ta-center"></div>
+                </div>
+
+                <div class="summary_section">
+                    <div class="secion_name">Комплектующие</div>
+                    <div id="sum_parts" class="section_info ta-center">
+                    </div>
+                </div>
+
+                <div class="summary_section">
+                    <div class="secion_name">Город</div>
+                    <div id="sum_city" class="section_info ta-center"></div>
+                </div>
+
+                <div class="summary_section">
+                    <div class="secion_name">Улица, дом, квартира</div>
+                    <div id="sum_address" class="section_info ta-center"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Default form -->
+    <section class="default-form">
+        <div class="container">
+
+            <div class="base-title ta-center title-indent">
+                Форма заказа обратного звонка
+            </div>
+
+            <form class="form_content" autocomplete="off">
+
+                <input
+                    type="text"
+                    class="form_input"
+                    name="name"
+                    placeholder="Имя"
+                    required
+                >
+
+                <input
+                    type="email"
+                    class="form_input"
+                    name="email"
+                    placeholder="Введите свой E-mail"
+                    required
+                >
+
+                <input 
+                    type="tel" 
+                    class="form_input" 
+                    name="tel" 
+                    placeholder="Телефон"
+                    required
+                    pattern="(\+7)?[\s]\(?[489][0-9]{2}\)[\s]?[0-9]{3}[\-]?[0-9]{2}[\-]?[0-9]{2}$"
+                    title="Формат номера должен быть следующим:
+                    +7 (999) 999-99-99"
+                >
+
+                <input 
+                    type="text" 
+                    class="form_input" 
+                    name="comment" 
+                    placeholder="Какая тема вас интересует?"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="base-button"
+                >
+                    Отправить
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container c-white ta-center animate__animated animate__infinite animate__tada">
+            © Всё на этом сайте защищено
+        </div>
+    </section>
+
+    <!-- Go back button -->
+    <div 
+        id="go-back" 
+        class="go-back-wrapper"
+        onclick="goBack()"
+    >
+        <img
+            class="go-back"
+            src="img/arrow-up.png"
+            alt="Вернуться в начало"
+        >
+    </div>
+
+    <!-- Turn on garland button -->
+    <div 
+        id="turn-on-garland" 
+        class="turn-on-garland-wrapper"
+    >
+        <img
+            class="turn-on-garland"
+            src="img/turn-on-garland.png"
+            alt="Включить гирлянду"
+        >
+    </div>
+
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
